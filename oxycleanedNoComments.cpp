@@ -530,7 +530,7 @@ int main() {
 		cout << "Assuming both players use Accurate & Defensive, this will be close to your average win percentage over many duels.\n";
 
 		auto stop = std::chrono::high_resolution_clock::now();		
-		auto duration = std::chrono::duration_cast<std::chrono::seconds>(stop - start);				
+		std::chrono::duration<double> duration = stop - start;			
 		cout << "_______________________________________________________________________________________________\n\n";
 		cout << "               SIMULATIONS COMPLETED IN " << duration.count() << " SECONDS - RESETTING FOR NEXT OPPONENT\n";
 		cout << "_______________________________________________________________________________________________\n\n";
