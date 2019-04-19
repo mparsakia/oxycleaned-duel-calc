@@ -203,7 +203,7 @@ int main() {
 	
 	while(true) {
 
-auto start = std::chrono::high_resolution_clock::now();						
+		auto start = std::chrono::high_resolution_clock::now();						
 		
 		unsigned short enemyatt = 0;			
 		unsigned short enemystr = 0;

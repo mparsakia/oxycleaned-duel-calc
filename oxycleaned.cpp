@@ -253,9 +253,7 @@ int main() {
 	// While (true) to reset the calculator after every simulation.
 	while(true) {
 
-		time_t starttime;						// Initializing time_t classes (for displaying how long it took to calculate)
-		time_t stoptime;
-		time(&starttime);
+		auto start = std::chrono::high_resolution_clock::now();	
 		
 		unsigned short enemyatt = 0;			// Initializing variables for enemy stats
 		unsigned short enemystr = 0;
