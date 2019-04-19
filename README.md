@@ -6,6 +6,7 @@ A program for calculating OSRS duel arena staking win-loss simulations.
 The calculator assumes the following:
 * You will not gain +1 damage on your max hit if you use controlled.  
 * You always swap between Accurate and Defensive accordingly.
+* Your opponent will always swap attacks and defenses according to their breakpoint or not as well.
 * You and your opponent are both using Abyssal Tentacle.  
 * Standard duel ruleset applies (No armor, No food, No special attacks, No weapon switch, etc.)
 
