@@ -581,10 +581,10 @@ int main() {
 		cout << "(STANDARD) Average of simulation winrates: " << avgwinrates << " percent.\n";
 		cout << "Assuming both players use Accurate & Defensive, this will be close to your average win percentage over many duels.\n";
 
-		time(&stoptime);
-		double howlong = difftime(stoptime, starttime);				// Measured in seconds
+		auto stop = std::chrono::high_resolution_clock::now();		// Stop timer
+		auto duration = std::chrono::duration_cast<std::chrono::seconds>(stop - start);
 		cout << "_______________________________________________________________________________________________\n\n";
-		cout << "               SIMULATIONS COMPLETED IN " << howlong << " SECONDS - RESETTING FOR NEXT OPPONENT\n";
+		cout << "               SIMULATIONS COMPLETED IN " << duration.count() << " SECONDS - RESETTING FOR NEXT OPPONENT\n";
 		cout << "_______________________________________________________________________________________________\n\n";
 
 	}
