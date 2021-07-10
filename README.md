@@ -1,5 +1,5 @@
 # oxycleaned 
-A program for calculating OSRS duel arena staking win-loss simulations.
+A CLI program for simulating OSRS duels and reporting staking win-loss odds.
 
 --- Notes About the Program ---  
 
